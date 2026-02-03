@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms in Html</title>
+</head>
+<body>
+	<h1>Captcha From</h1>
+
+		<fieldset>
+			<br>
+			<legend>Personal Details Here:</legend>
+		<label for="Captcha">Enter Captcha: <span style="color:red">*</span> </label>
+		<input type="text" id="Captcha" name="Captcha" placeholder="Enter Captcha here" title="Enter Captcha in 30 secs" required>
+		 <br> <br>
+		<button type="submit">Submit</button>
+		 &nbsp; <!-- &nbsp; for space -->
+		<button>Cancel</button>
+		<br><br>
+	<label for="UserName" >Enter Username: </label>
+	<input type="text" name="UserName" id="UserName" placeholder="Enter UserName"><br> <br>
+	<label for="Email"> Enter Email: </label>
+	<input type="email" name="Email" id="Email" placeholder="Enter Email"><br> <br>
+	<br>
+	<label for="password">Enter password: </label>
+	<input type="password" id="password" name="password" >
+	<br><br>
+	<label for="mobile">Enter Mobile number: </label>
+	<input type="tel" id="mobile" >
+	<br><br>
+	<label for="age">Enter Age: </label>
+	<input type="number" id="age" min="1" max="100"> <br> <br>
+	<label for="DOB">Enter DOB:</label>
+	<input type="date" id="DOB" name="DOB">
+	<br>
+	<br>
+	</fieldset>
+
+	<fieldset>
+		<br>
+		<legend>General Details everything is listed here:</legend>
+	<label for="datetime">Enter DOB with time:</label>
+	<input type="datetime-local" id="datetime" name="datetime">
+	<br>
+	<br>
+	<label for="time">Enter Check-in time:</label>
+	<input type="time" id="time" name="time">
+	<br><br>
+	<label for="url">Enter Website url:</label>
+	<input type="url" id="url" name="url">
+	<br><br>
+	<label>
+		<input type="checkbox" name="op1" value="html">HTML
+	</label>
+	<label>
+		<input type="checkbox" name="op2" value="css">CSS
+	</label>
+	<label>
+		<input type="checkbox" name="op3" value="js">Javascript
+	</label>
+	
+	<br><br>
+	<label>Enter Gender:</label>
+       <label> <input type="radio" name="gender" value="male">Male</label>
+	 <label><input type="radio" name="gender" value="female">Female</label>
+	<br><br>
+       <label>Upload PAN Card</label>
+	 <input type="file" accept=".pdf">
+	<br><br>
+         <label>Rate youself in HTML:</label>
+	   <input type="range" min="1" max="10" name="rating" value="1">
+	<br><br>
+	</fieldset>
+
+	<fieldset>
+		<br>
+	<label>Weeks:</label>
+	<input type="week">
+	<br><br>
+      <label>Select color</label>
+	<input type="color">
+	<br><br>
+	<label>Hidden</label>
+	<input type="hidden">
+	<br><br>
+	<label for="color">Choose your fav color :</label>
+	<select name="fav-color" id="color" size="3">
+		<option value="black">Black</option>
+		<option value="red">Red</option>
+		<option value="white" selected>White</option>
+		<option value="green">Green</option>
+	</select>
+	<br><br>
+	<label for="feedback">Enter Feedback</label>
+	<textarea  name="feedback" id="feedback" rows="5" cols="50" placeholder="Enter your feedback here"></textarea>
+	<br><br>
+	<button type="submit">Submit</button> 
+	<input type="reset" value="Cancel">
+	</fieldset>
+	
+   </form> 
+</body>
+</html>

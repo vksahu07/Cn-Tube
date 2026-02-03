@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Patterns in Html</title>
+</head>
+<body>
+	<h1>Regex</h1>
+	<form action="">
+	<!--1 only alphate with min 2 & max 50 - <input type="text" id="name" pattern="^[A-Za-z]{2,50}$" name="username"> -->
+	<!-- 2 only alphate with min 2 & max 50 with first letter caps - <input type="text" id="name" pattern="^[A-Z]{1}[a-z]{1,49}$"> -->
+	<!-- 3 Fn+Ln only aplphabets with min2 & max 50 with first letter caps - <input type="text" id="name" pattern="^[A-Z]{1}[a-z]{1,49}[][A-z]{1}{a-z}{1,49}$" name="username"> -->
+	<!-- <input type="text" id="name" pattern="^[A-Z]{1,49}\s[A-Z]{1}[a-z]{1,49}$" name="usernmae"> -->
+	<label for="phone">Enter Phone Number</label>
+	<input type="tel" id="phone" pattern="^\d{3}-\d{3}-\d{4}$">
+	<br>
+	<br>
+	<!-- <label for="pwd">Enter password</label>
+	<input type="password" id="pwd" pattern="^[A-Za-z\d@$!%*?&#]{8,}$" name="pwd"> -->
+	<!-- <label for="pwd">Enter password</label>
+	<input type="password" id="pwd" pattern="^(?=.*[a-z](?=.*[A-Z]))(?=.*\d)[A-Za-z\d] (?=.*{8,}$ " name="pwd"> -->
+	<!-- ^(?=.*[a-z](?=.*[A-Z]))(?=.*\d)[A-Za-z\d]{8,}$ -->
+	 <!-- (?=-) positive lookahead (must include) -->
+	  <label for="pwd">Enter password</label>
+	  <input type="password" id="pwd" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d{2})(?=.*[!@#$%^&*]){10,}$">
+	<br>
+	<br>
+	<input type="submit">
+	<input type="reset">
+	<br><br>
+
+	<!-- For email pattern makings -->
+
+	<label for="email">Enter email: </label>
+	<input type="text" id="email" pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" name="email">
+	<br><br>
+	<input type="submit">
+	<input type="reset">
+	</form>
+</body>
+</html>

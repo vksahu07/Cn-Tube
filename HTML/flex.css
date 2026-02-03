@@ -1,0 +1,46 @@
+.container {
+	background-color: brown;
+	display: flex;
+	height: 300px;
+	/* flex-direction: row; */
+	/* justify-content: space-evenly; */
+	/* justify-content: space-around; */
+	/* justify-content: center; */
+	/* flex-wrap: wrap;
+	align-content: center;
+	gap: 20px; */
+
+	
+	
+
+}
+.container div {
+	background-color: wheat;
+	width: 100px;
+	/* height: 10px; */
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+/*  here start flex child properties */
+
+.container .div1 {
+	/* order: 2; */
+	/* flex-grow: 1; */
+	/* flex-shrink: 3; */
+	flex-basis: 250px;
+	align-self: flex-start;
+}
+.container .div2 {
+	/* order: 3; */
+	/* flex-grow: 1; */
+	flex-shrink: 1;
+	align-self: flex-end;
+}
+.container .div3 {
+	/* order: 1; */
+	/* flex-grow: 1; */
+	flex-shrink: 1;
+	align-self: auto;
+}

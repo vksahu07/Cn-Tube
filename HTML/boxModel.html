@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box Model</title>
+	<style>
+		
+
+	
+
+		div {
+			background-color: aqua;
+			width: 100px;
+			height: 50px;
+			padding: 10px;
+			border: 5px solid brown;
+			margin: 10px;
+		}
+		.content {
+			background-color: aqua;
+			width: 100px;
+			height: 50px;
+			padding: 10px;
+			box-sizing: content-box;
+			border: 5px solid brown;
+			margin: 10px;
+		}
+		.border {
+			background-color: aqua;
+			width: 100px;
+			height: 50px;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 5px solid brown;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <p>Content</p> -->
+	 <h2>Nomral Div</h2>
+	 <div>Content</div>
+	 <br>
+	 <h2>Content Div</h2>
+	 <div class="content">Content</div>
+	 <br>
+	 <h2>Border Div</h2>
+	 <div class="border">Border</div>
+</body>
+</html>
