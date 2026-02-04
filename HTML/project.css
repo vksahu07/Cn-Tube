@@ -176,6 +176,11 @@ input[type="search"] {
   overflow: hidden; /* ensures content doesn't spill outside corners */
   border-radius: 10px;
   border: 1px solid black;
+  cursor: pointer;
+
+}
+video {
+  transform: scale(0.95);
 }
 
 .item p {
